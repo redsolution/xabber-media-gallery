@@ -1,0 +1,18 @@
+[Unit]
+Description=Xabber Media Gallery HTTP API
+After=network-online.target memcached.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=gallery
+Group=gallery
+WorkingDirectory=/srv/xabber-media-gallery
+EnvironmentFile=/etc/xabber-media-gallery.env
+ExecStart=/srv/xabber-media-gallery/.venv/bin/gunicorn gallery.wsgi:application --bind 127.0.0.1:8000 --workers 2 --timeout 120 --access-logfile - --error-logfile -
+Restart=on-failure
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

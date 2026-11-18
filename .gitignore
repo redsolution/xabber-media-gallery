@@ -133,3 +133,5 @@ GitHub.sublime-settings
 /uploaded
 
 /gallery/settings.py
+# Collected Django admin/static assets
+/staticfiles/
