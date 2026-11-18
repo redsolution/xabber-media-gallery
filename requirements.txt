@@ -1,0 +1,11 @@
+djangorestframework<=3.12.4
+Django<=3.2.*
+#Django==2.2.*
+xmpppy
+urllib3
+beautifulsoup4
+django-jsonfield-backport<=1.0.5
+python-memcached
+unidecode
+git+https://github.com/redsolution/jid_validation.git
+# system packages ffmpeg and imagemagick
