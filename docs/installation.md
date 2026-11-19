@@ -1,6 +1,21 @@
 # Installation and deployment
 
-[Back to README](../README.md) · [Operations](operations.md)
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)
+
+---
+
+Set up a local instance, configure your XMPP service account, and deploy behind HTTPS.
+
+### On this page
+
+- [1. Prepare the host](#1-prepare-the-host)
+- [2. Install the application](#2-install-the-application)
+- [3. Configure settings](#3-configure-settings)
+- [4. Configure production HTTP serving](#4-configure-production-http-serving)
+- [5. Connect and verify](#5-connect-and-verify)
+- [Validation scope](#validation-scope)
+
+---
 
 ## 1. Prepare the host
 
@@ -160,3 +175,7 @@ XMPP delivery was mocked; this was not a live federation or production deploymen
 test. Python 3.10 remains the conservative version for the legacy Django target.
 The Memcached service, Nginx/TLS, systemd, CORS, and media conversion must be verified
 on your deployment host. See the known schema-check findings in [Operations](operations.md).
+
+---
+
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)

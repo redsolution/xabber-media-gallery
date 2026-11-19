@@ -1,6 +1,21 @@
 # Operations and troubleshooting
 
-[Back to README](../README.md) · [Installation](installation.md)
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)
+
+---
+
+Keep your instance running with quota configuration, scheduled cleanup, backups, and troubleshooting.
+
+### On this page
+
+- [Configuration defaults](#configuration-defaults)
+- [Expiration cleanup](#expiration-cleanup)
+- [Storage and backups](#storage-and-backups)
+- [Schema and framework checks](#schema-and-framework-checks)
+- [Public deployment limitations](#public-deployment-limitations)
+- [Troubleshooting](#troubleshooting)
+
+---
 
 ## Configuration defaults
 
@@ -128,3 +143,7 @@ authorization or the legacy dependency stack.
 Before reporting a problem, record the Git revision, resolved package versions,
 HTTP status/body, and sanitized relevant logs. Never publish credentials, tokens,
 verification codes, user content, or private account identifiers.
+
+---
+
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)

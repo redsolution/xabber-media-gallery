@@ -7,8 +7,21 @@ avatars. Clients prove ownership of an XMPP account, receive an HTTP bearer toke
 and use the gallery API to upload and manage files. Recipients download shared
 files over HTTPS.
 
-[Installation](docs/installation.md) · [XMPP client integration](docs/client-protocol.md) ·
-[HTTP API](docs/http-api.md) · [Operations](docs/operations.md) · [Contributing](CONTRIBUTING.md)
+## Documentation
+
+Choose a guide to open it directly on GitHub.
+
+| Guide | What you’ll find | For |
+| --- | --- | --- |
+| **[Install the gallery →](docs/installation.md)** | Requirements, configuration, first launch, and production deployment | Server administrators |
+| **[Connect an XMPP client →](docs/client-protocol.md)** | Discovery, verification stanzas, authentication, uploads, and sharing | Client developers |
+| **[Explore the HTTP API →](docs/http-api.md)** | Endpoints, request fields, responses, pagination, and errors | API integrators |
+| **[Operate your instance →](docs/operations.md)** | Quotas, expiration cleanup, backups, limitations, and troubleshooting | Operators |
+
+**New here?** Start with [Installation](docs/installation.md), then follow
+[Client integration](docs/client-protocol.md) to verify an upload end to end.
+
+[Browse all documentation](docs/README.md) · [Contribute](CONTRIBUTING.md)
 
 ## How it works
 

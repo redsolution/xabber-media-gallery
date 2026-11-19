@@ -1,11 +1,24 @@
 # HTTP API reference
 
-[Back to README](../README.md) · [Client walkthrough](client-protocol.md)
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)
+
+---
+
+Look up routes, authentication requirements, request fields, response formats, and errors.
 
 Default prefix: `https://gallery.example.com/api/v1/`. All routes below are relative
 to that prefix and retain their trailing slash. Send JSON for non-upload request
 bodies and multipart form data for uploads. Authenticated requests use
 `Authorization: Bearer <token>`; many views also accept Django admin session auth.
+
+### On this page
+
+- [Client endpoints](#client-endpoints)
+- [Administration endpoints](#administration-endpoints)
+- [Errors and limits](#errors-and-limits)
+- [Source of truth](#source-of-truth)
+
+---
 
 ## Client endpoints
 
@@ -165,3 +178,7 @@ be rejected. See [Operations](operations.md) for deployment constraints.
 
 This reference describes current behavior; it does not imply every exposed route
 has been audited for public multi-tenant deployment.
+
+---
+
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)

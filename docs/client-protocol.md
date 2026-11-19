@@ -1,11 +1,28 @@
 # Connecting an XMPP client
 
-[Back to README](../README.md) · [HTTP API](http-api.md)
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)
+
+---
+
+Follow the complete connection flow, from gallery discovery to sharing an uploaded file.
 
 This document describes the gallery implementation in this repository. XMPP
 carries account verification and chat messages; HTTPS carries gallery API calls
 and media. The gallery logs in as a regular XMPP account to send codes. It is not
 an XMPP external component or a XEP-0363 upload service.
+
+### On this page
+
+- [1. Find the gallery](#1-find-the-gallery)
+- [2. Request an XMPP verification code](#2-request-an-xmpp-verification-code)
+- [3. Read the verification stanza](#3-read-the-verification-stanza)
+- [4. Exchange the code for an HTTP token](#4-exchange-the-code-for-an-http-token)
+- [5. Check quota and deduplication (optional)](#5-check-quota-and-deduplication-optional)
+- [6. Upload bytes](#6-upload-bytes)
+- [7. Share the returned file URL over XMPP](#7-share-the-returned-file-url-over-xmpp)
+- [8. List, remove, and sign out](#8-list-remove-and-sign-out)
+
+---
 
 ## 1. Find the gallery
 
@@ -259,3 +276,7 @@ token: anyone with the URL can download the file until its link is removed.
 For sign-out, remove the local token from secure storage. The API exposes token
 listing/deletion, but its current views do not filter token objects to the caller;
 restrict those routes until ownership checks are implemented. See [Operations](operations.md).
+
+---
+
+[Project home](../README.md) · [Documentation](README.md) · [Installation](installation.md) · [Client protocol](client-protocol.md) · [HTTP API](http-api.md) · [Operations](operations.md)
