@@ -31,7 +31,7 @@ XMPP client ── request verification ──► Gallery HTTP API
      └──── verification stanza over XMPP ───┘
      │
      └── exchange code → bearer token → upload → share HTTPS URL
-                                                      │
+                                                       │
 Recipient ◄────────────────── download from web server ┘
 ```
 
